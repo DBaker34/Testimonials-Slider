@@ -1,0 +1,65 @@
+.slide {
+  display: none; }
+
+.slideimg {
+  display: none; }
+
+.active {
+  display: block; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  background-image: url("images/pattern-bg.svg"); }
+
+#gridContainer {
+  display: grid;
+  grid-template-columns: 15% 35% 35% 15%;
+  grid-template-rows: 20% 60% 20%;
+  height: 100vh;
+  width: 100vw; }
+  #gridContainer p {
+    margin: auto auto auto 4%;
+    align-items: center;
+    grid-area: 2 / 2 / 2 / 4;
+    width: 55%;
+    z-index: 1;
+    font-size: 32px;
+    color: #202046; }
+  #gridContainer span {
+    display: block;
+    font-size: 18px;
+    padding: 40px 0 0 0;
+    font-weight: 700; }
+  #gridContainer .pic {
+    grid-area: 2 / 3 / 2 / 3;
+    margin: auto;
+    position: relative; }
+    #gridContainer .pic #tanya {
+      width: 100%;
+      box-shadow: 0px 10px 15px #888888; }
+    #gridContainer .pic #john {
+      width: 100%;
+      box-shadow: 0px 10px 15px #888888; }
+    #gridContainer .pic #prev {
+      position: absolute;
+      padding: 20px 25px 20px 20px;
+      left: 10%;
+      bottom: -3.5%;
+      border-radius: 50px 0 0 50px;
+      background-color: white; }
+    #gridContainer .pic #prev:hover {
+      cursor: pointer; }
+    #gridContainer .pic #next {
+      position: absolute;
+      padding: 20px 20px 20px 25px;
+      left: 20%;
+      bottom: -3.5%;
+      border-radius: 0 50px 50px 0;
+      background-color: white; }
+    #gridContainer .pic #next:hover {
+      cursor: pointer; }
+
+/*# sourceMappingURL=testimonial.css.map */
