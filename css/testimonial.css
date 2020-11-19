@@ -22,6 +22,10 @@ body {
   grid-template-rows: 20% 60% 20%;
   height: 100vh;
   width: 100vw; }
+  @media only screen and (max-width: 800px) {
+    #gridContainer {
+      grid-template-columns: 5% 90% 5%;
+      grid-template-rows: 50% 50%; } }
   #gridContainer p {
     margin: auto auto auto 4%;
     align-items: center;
@@ -31,19 +35,46 @@ body {
     font-size: 32px;
     color: #202046;
     z-index: 2; }
+    @media only screen and (max-width: 800px) {
+      #gridContainer p {
+        grid-area: 2 / 2 / 2 / 2;
+        width: 100%;
+        text-align: center;
+        margin: auto; } }
   #gridContainer span {
     display: block;
     font-size: 18px;
     padding: 40px 0 0 0;
-    font-weight: 700; }
+    font-weight: 700;
+    width: 20%;
+    margin: 0;
+    width: 100%; }
+  #gridContainer #job {
+    padding: 0px;
+    color: #babacf;
+    width: 100%; }
+  #gridContainer #quote {
+    position: absolute;
+    left: 25%;
+    top: 30%; }
+    @media only screen and (max-width: 800px) {
+      #gridContainer #quote {
+        left: 40%;
+        top: 57%; } }
   #gridContainer .pic {
     grid-area: 2 / 3 / 2 / 3;
     margin: auto;
     position: relative; }
+    @media only screen and (max-width: 800px) {
+      #gridContainer .pic {
+        grid-area: 1 / 2 / 1 / 2;
+        width: 60%;
+        margin: auto auto 0 auto; } }
     #gridContainer .pic #bg {
       position: absolute;
       top: -15%;
       left: -12.5%;
+      width: 130%;
       z-index: 0; }
     #gridContainer .pic #tanya {
       width: 100%;
@@ -63,6 +94,10 @@ body {
       border-radius: 50px 0 0 50px;
       background-color: white;
       z-index: 2; }
+      @media only screen and (max-width: 800px) {
+        #gridContainer .pic #prev {
+          left: 35%;
+          bottom: -5%; } }
     #gridContainer .pic #prev:hover {
       cursor: pointer; }
     #gridContainer .pic #next {
@@ -73,6 +108,10 @@ body {
       border-radius: 0 50px 50px 0;
       background-color: white;
       z-index: 2; }
+      @media only screen and (max-width: 800px) {
+        #gridContainer .pic #next {
+          left: 50%;
+          bottom: -5%; } }
     #gridContainer .pic #next:hover {
       cursor: pointer; }
 
