@@ -12,7 +12,9 @@ body {
   padding: 0;
   font-family: "Inter", sans-serif;
   font-weight: 300;
-  background-image: url("images/pattern-bg.svg"); }
+  background-image: url(../images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left; }
 
 #gridContainer {
   display: grid;
@@ -27,7 +29,8 @@ body {
     width: 55%;
     z-index: 1;
     font-size: 32px;
-    color: #202046; }
+    color: #202046;
+    z-index: 2; }
   #gridContainer span {
     display: block;
     font-size: 18px;
@@ -37,19 +40,29 @@ body {
     grid-area: 2 / 3 / 2 / 3;
     margin: auto;
     position: relative; }
+    #gridContainer .pic #bg {
+      position: absolute;
+      top: -15%;
+      left: -12.5%;
+      z-index: 0; }
     #gridContainer .pic #tanya {
       width: 100%;
-      box-shadow: 0px 10px 15px #888888; }
+      box-shadow: 0px 10px 15px #888888;
+      z-index: 1;
+      position: relative; }
     #gridContainer .pic #john {
       width: 100%;
-      box-shadow: 0px 10px 15px #888888; }
+      box-shadow: 0px 10px 15px #888888;
+      z-index: 1;
+      position: relative; }
     #gridContainer .pic #prev {
       position: absolute;
       padding: 20px 25px 20px 20px;
       left: 10%;
       bottom: -3.5%;
       border-radius: 50px 0 0 50px;
-      background-color: white; }
+      background-color: white;
+      z-index: 2; }
     #gridContainer .pic #prev:hover {
       cursor: pointer; }
     #gridContainer .pic #next {
@@ -58,7 +71,8 @@ body {
       left: 20%;
       bottom: -3.5%;
       border-radius: 0 50px 50px 0;
-      background-color: white; }
+      background-color: white;
+      z-index: 2; }
     #gridContainer .pic #next:hover {
       cursor: pointer; }
 
